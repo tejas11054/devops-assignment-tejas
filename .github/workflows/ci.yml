@@ -30,11 +30,11 @@ jobs:
           node test.js
 
       - name: Build docker image
-        run: docker build -t devops-assignment:ci .
+        run: docker build -t devops-assignment .
 
       - name: Run docker container (verify inside runner)
         run: |
-          docker run -p 3000:3000 devops-assignment
+          docker run -d -p 3000:3000 devops-assignment
           sleep 2
           # verify with curl
           curl -f http://localhost:3000/ || (docker logs devops-ci && exit 1)
