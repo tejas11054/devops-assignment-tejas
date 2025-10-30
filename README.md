@@ -20,7 +20,6 @@ A minimal Node.js web app that returns "Hello World" and demonstrates:
 ```bash
 docker build -t devops-assignment .
 docker run -d -p 3000:3000 devops-assignment
-# then open http://localhost:3000
 ```
 
 ## Pipeline flow (step-by-step)
