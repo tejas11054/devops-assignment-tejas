@@ -34,7 +34,7 @@ jobs:
 
       - name: Run docker container (verify inside runner)
         run: |
-          docker run --name devops-ci -d -p 3000:3000 devops-assignment:ci
+          docker run -p 3000:3000 devops-assignment
           sleep 2
           # verify with curl
           curl -f http://localhost:3000/ || (docker logs devops-ci && exit 1)
