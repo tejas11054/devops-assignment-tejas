@@ -9,7 +9,7 @@ A minimal Node.js web app that returns "Hello World" and demonstrates:
 1. Install Node.js and Docker.
 2. Clone repo and install:
    ```bash
-   git clone https://github.com/<tejas-ramane>/devops-assignment-tejas.git
+   git clone https://github.com/tejas-ramane/devops-assignment-tejas.git
    cd devops-assignment-tejas
    npm install
    npm start
