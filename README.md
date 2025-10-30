@@ -28,8 +28,8 @@ docker run --rm -p 3000:3000 devops-assignment
 2. GitHub Actions triggers `.github/workflows/ci.yml`.  
 3. Actions performed:
    - Checkout repository  
-   - Install dependencies (`npm install`)  
-   - Run a basic functional test (start server and run `node test.js`)  
+   - Install dependencies (`npm install`)
+   - Run Dummy Test
    - Build Docker image (`docker build`)  
    - Run container and verify with `curl http://localhost:3000/`  
 4. If all steps succeed, pipeline is green; otherwise, it fails and shows logs.
